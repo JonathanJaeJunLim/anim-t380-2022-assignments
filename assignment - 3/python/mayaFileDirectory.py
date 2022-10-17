@@ -3,7 +3,7 @@
 import os
 
 
-path = os.path(assets/$asset/maya/scenes)
+path = os.path(/assets/$asset/maya/scenes)
 os.makedirs(path)
 
 #envLoc = os.getenv('envSet') 
