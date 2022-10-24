@@ -11,8 +11,7 @@ def digitFinder(frameCount):
         frameCount = frameCount / divider
         digitCount += 1
 
-    fPadding = digitCount
-    return fPadding
+    return digitCount 
 
 #Get folder path from user
 print('Enter target folder: ')
