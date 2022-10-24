@@ -6,13 +6,12 @@ import os
 #Count digits
 def digitFinder(frameCount):
     divider = 10
-    digitCount = 1
-    while frameCount > 1:
+    digitCount = 0
+    while frameCount >= 1:
         frameCount = frameCount / divider
-        divider *= 10
         digitCount += 1
 
-    fPadding = digitCount + 1
+    fPadding = digitCount
     return fPadding
 
 #Get folder path from user
@@ -38,8 +37,10 @@ fPadCount = digitFinder(fCount)
 #Rename files
 fNum = 1
 for file in files:
+    #Update frame padding
     fPad = ''
     newFrameDig = digitFinder(fNum)
+    print(newFrameDig)
     while fPadCount - newFrameDig >= 0:
         fPad += '0'
         newFrameDig += 1
