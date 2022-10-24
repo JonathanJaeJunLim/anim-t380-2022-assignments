@@ -1,0 +1,6 @@
+#This script allows you to rename an entire folder with a name and automatically creates proper frame numbers
+#This script also keeps an extra padding of digit after the last frame
+
+#This script requires the user to input the folderpath and a name for the frames
+
+#To run, use a python interpreter and run the code to start
